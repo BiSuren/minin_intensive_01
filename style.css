@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+}
+h2 {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: .5rem;
+}
+
+hr {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    background: #ccc;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 5rem;
+    display: flex;
+}
+
+.cart {
+    width: 400px;
+    border-right: 1px solid #ccc;
+    padding: 1rem;
+}
+
+.shop {
+    padding: 1rem;
+    max-width: calc(1000px - 400px);
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.products li {
+    width: 100px;
+    border: 2px solid rgba(230, 131, 61, 0.777);
+    padding: .5rem;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.products li:hover {
+    cursor: pointer;
+    background: rgba(230, 131, 61, 0.777);
+    transition: background-color .4s;
+}
+
+.products li img {
+    max-width: 100%;
+}
+
+.filter {
+    margin-bottom: 1rem;
+    outline: none;
+    width: 560px;
+    border: none;
+    background-color: rgba(235, 186, 152, 0.777);
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.filter:focus{
+    background-color: rgba(230, 131, 61, 0.777);
+    outline: none;
+    border-left: 5px solid rgba(179, 103, 48, 0.777);
+    transition: .2s;
+}
+
+.cart-list {
+    list-style: none;
+}
+
+.cart-list li {
+    margin-bottom: .5rem;
+    padding: .5rem;
+}
+
+.cart-list li:hover {
+    background: rgba(230, 131, 61, 0.777);
+    transition: all .3s;
+    border-radius: 10px;
+    }
+
+.clear {
+    padding: .5rem 1rem;
+    background: darkred;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.clear:hover {
+    opacity: .8;
+    transition: opacity .3s;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mi{
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+}
+.plus{
+    padding: 5px 10px;
+    background: darkred;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.minus{
+    padding: 5px 10px;
+    background: darkred;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.amount{
+font-size: 20px;
+margin: 0 10px;
+}
