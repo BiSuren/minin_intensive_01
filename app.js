@@ -1,4 +1,4 @@
-let productService = new ProductService(data)
+const productService = new ProductService(data)
 const cartService = new CartService()
 const htmlService = new HTMLService()
 
