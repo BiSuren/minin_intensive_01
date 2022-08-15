@@ -1,4 +1,4 @@
-const productService = new ProductService(data)
+let productService
 const cartService = new CartService()
 const htmlService = new HTMLService()
 
@@ -61,3 +61,14 @@ function renderCart() {
     cartService.getInfo()
   )
 }
+
+async function startApplication() {
+  const response = await fetch('https://fakestoreapi.com/products')
+  const data = await response.json()
+  
+  productService = new ProductService(data)
+  renderCart()
+  renderProducts(productService.products)
+}
+
+startApplication()
