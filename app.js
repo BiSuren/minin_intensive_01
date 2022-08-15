@@ -1,4 +1,4 @@
-let productService = new ProductService()
+let productService = new ProductService(data)
 const cartService = new CartService()
 const htmlService = new HTMLService()
 
@@ -61,13 +61,3 @@ function renderCart() {
     cartService.getInfo()
   )
 }
-
-async function startApplication() {
-  renderCart()
-
-    productService = new ProductService(data)
-
-    renderProducts(productService.products)
-}
-
-startApplication()
